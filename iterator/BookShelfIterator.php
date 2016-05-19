@@ -1,7 +1,5 @@
 <?php
-if(!interface_exists('Iterator')) {
-  require('MyIterator.php');
-}
+require('MyIterator.php');
 
 class BookShelfIterator implements MyIterator
 {
