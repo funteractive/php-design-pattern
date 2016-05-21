@@ -1,4 +1,6 @@
 <?php
+namespace Iterator;
+
 interface MyIterator
 {
   public function hasNext();
