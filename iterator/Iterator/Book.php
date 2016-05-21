@@ -1,4 +1,6 @@
 <?php
+namespace Iterator;
+
 class Book
 {
   private $name;

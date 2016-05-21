@@ -1,7 +1,5 @@
 <?php
-require('Aggregate.php');
-require('BookShelfIterator.php');
-require('Book.php');
+namespace Iterator;
 
 class BookShelf implements Aggregate
 {
@@ -10,7 +8,7 @@ class BookShelf implements Aggregate
 
   public function __construct($maxsize)
   {
-    $this->books = new SplFixedArray($maxsize);
+    $this->books = new \SplFixedArray($maxsize);
   }
 
   public function getBookAt($index)

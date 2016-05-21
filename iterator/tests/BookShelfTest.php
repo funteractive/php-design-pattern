@@ -1,5 +1,6 @@
 <?php
-require('../BookShelf.php');
+use Iterator\BookShelf;
+use Iterator\Book;
 
 class BookShelfTest extends PHPUnit_Framework_TestCase
 {
@@ -14,7 +15,7 @@ class BookShelfTest extends PHPUnit_Framework_TestCase
 
   public function testGetBookAt()
   {
-    $this->assertInstanceOf('Book', $this->bookShelf->getBookAt(0));
+    $this->assertInstanceOf('Iterator\Book', $this->bookShelf->getBookAt(0));
   }
 
   public function testAppendBook()
@@ -41,6 +42,6 @@ class BookShelfTest extends PHPUnit_Framework_TestCase
 
   public function testIterator()
   {
-    $this->assertInstanceOf('BookShelfIterator', $this->bookShelf->iterator($this->bookShelf));
+    $this->assertInstanceOf('Iterator\BookShelfIterator', $this->bookShelf->iterator($this->bookShelf));
   }
 }

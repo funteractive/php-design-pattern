@@ -1,5 +1,5 @@
 <?php
-require('MyIterator.php');
+namespace Iterator;
 
 class BookShelfIterator implements MyIterator
 {

@@ -1,5 +1,8 @@
 <?php
-require('BookShelf.php');
+require __DIR__ . '/vendor/autoload.php';
+
+use Iterator\BookShelf;
+use Iterator\Book;
 
 $bookShelf = new BookShelf(4);
 $bookShelf->appendBook(new Book('Around the World in 80 days'));
